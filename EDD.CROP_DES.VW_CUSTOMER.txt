@@ -6,5 +6,6 @@ create or replace view EDD.CROP_DES.VW_CUSTOMER(
 select 
 c_customer_sk as customer_number,
 c_customer_id as customer_id,
-c_current_cdemo_sk as customer_cdemo_number
+c_current_cdemo_sk as customer_cdemo_number,
+'' as d
 from SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.CUSTOMER;
